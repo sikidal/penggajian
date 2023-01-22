@@ -14,6 +14,9 @@ switch ($page) {
     case "bagian":
         include 'pages/bagian.php';
         break;
+    case "bagiantambah":
+        include 'pages/bagiantambah.php';
+        break;
     default:
         include 'pages/404.php';
 }

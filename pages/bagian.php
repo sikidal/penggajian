@@ -7,7 +7,7 @@ include "database/connection.php";
         <h3>Bagian</h3>
     </div>
     <div class="col">
-        <a href="#" class="btn btn-success float-end">
+        <a href="?page=bagiantambah" class="btn btn-success float-end">
             <i class="fa fa-plus-circle"></i>
             Tambah
         </a>

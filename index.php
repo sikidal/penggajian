@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (is_null($_SESSION['id'])) {
+    header('location:login.php');
+}
+?>
+
 <!-- https://www.youtube.com/watch?v=CMwzLURK-rQ -->
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +22,12 @@
 <body>
     <div class="d-flex" id="wrapper">
         <!-- Sidebar -->
-        <?php include 'components/sidebar.php' ?>
+        <?php
+        if ($_SESSION['level'] == 'administrator') {
+            include 'components/sidebar.php';
+        } else {
+            include 'components/sidebar_pimpinan.php';
+        } ?>
         <!-- /#sidebar-wrapper -->
 
         <!-- Page Content -->
