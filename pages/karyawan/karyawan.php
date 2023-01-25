@@ -1,5 +1,10 @@
 <?php
 include "database/connection.php";
+
+if (($_SESSION['level'] != 'administrator') && ($_SESSION['level'] != 'pimpinan')) {
+    $_SESSION['error'] = 'Anda tidak mempunyai akses ke halaman tersebut';
+    header('location:?page=dashboard');
+}
 ?>
 
 <div class="row">

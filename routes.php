@@ -9,7 +9,7 @@ if (isset($_GET['page'])) {
 switch ($page) {
     case "":
     case "dashboard":
-        include 'pages/bagian/dashboard.php';
+        include 'pages/dashboard.php';
         break;
     case "bagian":
         include 'pages/bagian/bagian.php';
