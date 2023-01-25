@@ -57,11 +57,11 @@ include "database/connection.php";
                         <td><?= $row['nama'] ?></td>
                         <td><?= $row['nama_bagian'] ?></td>
                         <td>
-                            <a href="?page=karyawanubah&id=<?= $row["nik"] ?>" class="btn btn-primary">
+                            <a href="?page=karyawanubah&nik=<?= $row["nik"] ?>" class="btn btn-primary">
                                 <i class="fa fa-edit"></i>
                                 Ubah
                             </a>
-                            <a href="?page=karyawanhapus&id=<?= $row["nik"] ?>" onclick="javascript: return confirm('Konfirmasi data akan dihapus?');" class="btn btn-danger">
+                            <a href="?page=karyawanhapus&nik=<?= $row["nik"] ?>" onclick="javascript: return confirm('Konfirmasi data akan dihapus?');" class="btn btn-danger">
                                 <i class="fa fa-trash"></i>
                                 Hapus
                             </a>
