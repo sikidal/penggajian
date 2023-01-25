@@ -56,7 +56,7 @@ include "database/connection.php";
                         <th scope="row"><?= $no++ ?></th>
                         <td><?= $row['nama'] ?></td>
                         <td>
-                            <a href="#" class="btn btn-primary">
+                            <a href="?page=bagianubah&id=<?= $row["id"] ?>" class="btn btn-primary">
                                 <i class="fa fa-edit"></i>
                                 Ubah
                             </a>
