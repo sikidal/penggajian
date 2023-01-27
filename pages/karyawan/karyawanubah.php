@@ -91,7 +91,7 @@ include "database/connection.php";
                     <input type="radio" class="form-check-input" id="MAGANG" name="status_karyawan" value="MAGANG" <?= $magang_checked ?> required>
                     <label for="MAGANG" class="form-check-label">Magang</label>
                 </div>
-                <div class="col mb-3 mt-3">
+                <div class="mb-3 mt-3">
                     <label for="bagian_id" class="form-label">Bagian</label>
                     <?php
                     $selectSQLBagian = "SELECT * FROM bagian";
@@ -115,7 +115,7 @@ include "database/connection.php";
                         return;
                     }
                     ?>
-                    <select name="bagian_id" id="bagian_id" class="form-select">
+                    <select name="bagian_id" id="bagian_id" class="form-select select2">
                         <option value="" selected> -- Pilih Bagian -- </option>
                         <?php
                         while ($row_bagian = mysqli_fetch_assoc($resultBagian)) {
@@ -126,12 +126,12 @@ include "database/connection.php";
                         }
                         ?>
                     </select>
-                    <div class="col mb-3 mt-3">
-                        <button type="submit" class="btn btn-success" name="simpan_button">
-                            <i class="fa fa-save"></i>
-                            Simpan
-                        </button>
-                    </div>
+                </div>
+                <div class="mb-3 mt-3">
+                    <button type="submit" class="btn btn-success" name="simpan_button">
+                        <i class="fa fa-save"></i>
+                        Simpan
+                    </button>
                 </div>
             </form>
         </div>
