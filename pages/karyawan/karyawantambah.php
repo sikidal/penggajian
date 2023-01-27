@@ -111,7 +111,7 @@ include "database/connection.php";
                         return;
                     }
                     ?>
-                    <select name="bagian_id" id="bagian_id" class="form-select">
+                    <select name="bagian_id" id="bagian_id" class="form-select select2">
                         <option value="" selected> -- Pilih Bagian -- </option>
                         <?php
                         while ($row = mysqli_fetch_assoc($result)) {
